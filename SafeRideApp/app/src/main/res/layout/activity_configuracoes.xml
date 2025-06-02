@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBlue">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationConguracoes"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        app:backgroundTint="@color/mainBlue"
+        app:itemIconSize="32dp"
+        app:itemIconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="90dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Configurações"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/voltarConfiguracoes"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="22dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voltarbutton" />
+
+    <Button
+        android:id="@+id/perfilButton"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/perfil"
+        android:fontFamily="sans-serif-medium"
+        android:text="Perfil"
+        android:textAllCaps="false"
+        android:textColor="@color/mainBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/settings" />
+
+    <Button
+        android:id="@+id/contaButton"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/configuracoes"
+        android:fontFamily="sans-serif-medium"
+        android:text="Conta"
+        android:textColor="@color/mainBlue"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfilButton" />
+
+    <Button
+        android:id="@+id/notificationButton"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/notification"
+        android:fontFamily="sans-serif-medium"
+        android:text="Notificações"
+        android:textColor="@color/mainBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contaButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
